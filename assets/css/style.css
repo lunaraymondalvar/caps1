@@ -10,12 +10,20 @@
 	/*font-family: 'Montserrat', sans-serif;*/
 }
 
+html {
+	scroll-behavior: smooth;
+}
 /*landing page*/
 
 .container {
 	font-family: 'Jacques Francois Shadow', cursive;
 
 }
+
+#cine {
+	margin-bottom: -20px;
+	margin-top: -110px;
+} 
 
 .jumbotron hr {
 	background-color: #fff; /
@@ -60,16 +68,21 @@
 	height: 100vh;
 }
 
-.jumbotron h1 {
+/*.jumbotron h1 {
 	color: yellow;
-	/*color: #f2f2f2;*/
 	margin-top: -200px;
 	letter-spacing: 4px;
-}	
+}	*/
 
-.lead {
-	color: black;
+#cine {
+	color: yellow;
+	margin-top: -200px;
+	letter-spacing: 4px;
 }
+
+/*.lead {
+	color: black;
+}*/
 
 /*end of landing page*/
 
@@ -103,9 +116,98 @@
 	margin-top: 20px;
 }
 
+#tohome {
+	border-style: 2px solid black;
+	border-radius: 20px;
+	background-color: yellow;
 
+}
 /*end of home page*/
 
+#forceawakens:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#avatarmovie:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#panther:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#infinitywar:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#titanic:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#panther:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#jurassic:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#avengers:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#jedi:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#incredibles:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#darkknight:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*start of box office page*/
+
+#gitna {
+	background-color: white;
+	height: 100vh;
+	background-image: url(../images/testbg.jpg);
+	background-repeat: none;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+
+/*end of box office page*/
 
 /*start of contact page*/
 
@@ -115,12 +217,238 @@
 	width: 100%;
 }
 */
+
+
 iframe {
 	width: 100%;
 	height: 100%;
 }
 /*end of contact page*/
 
+/*start of about us page*/
+
+#jumbotron-about {
+	background-color: black; /*#141414*/
+	height: 90vh;
+	border-radius: 0;
+}
+
+#landing-about {
+	color: #f2f2f2;
+	font-size: 5em;
+	padding-top: 20vh;
+	letter-spacing: 5px;
+	font-family: 'Jacques Francois Shadow', cursive;
+}
+
+.about-tags {
+	font-weight: bold;
+	font-family: 'Jacques Francois Shadow', cursive;
+}
+
+#mission {
+	height: 100%;
+	background-color: #141414; /*off black*/
+	color: #f2f2f2; /*off white**/
+}
+
+#vision {
+	height: 100%;
+	background-color: #f2f2f2; /*off white**/ 
+	color: #141414; /*off black*/
+}
+
+/*end of about us page*/
+
+/*start of test*/
+/*#rev {
+	border: 3px double white;
+	display: block;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#spot {
+	border: 3px solid red;
+	display: block;
+	border-radius: 10px;
+}
+
+#dom {
+	border: 3px solid red;
+	display: block;
+	border-radius: 10px;
+}
+
+#world {
+	border: 3px solid red;
+	display: block;
+	border-radius: 10px;
+}
+*/
+
+#dbo {
+	height: 100vh;
+	color: black;
+	/*background-color: yellow;*/
+	background-color: black;
+}
+
+#wwbox {
+	height: 100vh;
+	color: black;
+	/*background-color: yellow;*/
+	background-color: white;
+}
+
+#movrev {
+	height: 100vh;
+	color: black;
+	/*background-color: yellow;*/
+	background-color: darkblue;
+}
+
+#barside > li > a {
+	border: 3px solid blue;
+	display: block;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	height: 50px;
+	padding-top: 5%;
+}
+
+#navbar {
+	background-color: darkblue;
+}
+
+#rev {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	letter-spacing: 7px;
+	border-radius: 10px;
+
+}
+
+#spot {
+	margin-bottom: 10px;
+	letter-spacing: 5px;
+	border-radius: 10px;
+}
+
+#dom {
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	border-radius: 10px;
+}
+
+#world {
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	border-radius: 10px;
+}
+
+#soon {
+	margin-bottom: 10px;
+	letter-spacing: 7px;
+	border-radius: 10px;
+}
+
+ul > li:hover {
+	background-color: yellow;
+	border-radius: 10px;
+	color: black;
+}
+
+
+ul > li:hover > a {
+	color: blue;
+	background-color: indianred;
+}
+
+ul > li > a:hover {
+  background-position: 100% 100%;
+}
+
+#domhead {
+	padding-top: 60px;
+	color: white;
+}
+
+#worldhead {
+	padding-top: 60px;
+	color: black;
+}
+
+#revhead {
+ 	padding-top: 60px;
+	color: white;
+}
+
+#revimg {
+	padding-top: 105px;
+	width: 1100px;
+	height: 600px;
+	padding-right: 20px;
+}
+
+#boxlist > a {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#wwboxlist > a {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#revbox > a {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#boxlist > a:hover {
+	background-color: blue;
+	color: white;
+}
+
+#wwboxlist > a:hover {
+	background-color: black;
+	color: white;
+}
+
+#revbox > a:hover {
+	background-color: black;
+	color: white;
+}
+
+/*end of test*/
+
+/*start of gallery*/
+
+#headgall {
+	margin-top: 8%;
+	background-color: #141414; /*off black*/
+	color: #f2f2f2; /*off white*/
+	text-transform: uppercase; /*uppercase the text*/
+	letter-spacing: 0.5em;
+}
+
+#listko {
+	width: 16.99%;
+}
+
+img[alt="eto"] {
+	width: 100%;
+	height: 200px;
+}
+
+/*end of gallery*/
 @media only screen and (max-width: 400px) {
 	#jumbo-land {
 	height: 100%; /*vh is the whole screen view*/ /*for mobile and table it should be 100% instead of 100vh*/
@@ -132,3 +460,4 @@ iframe {
 	height: 100%; /*vh is the whole screen view*/ /*for mobile and table it should be 100% instead of 100vh*/
 	
 }
+

@@ -40,19 +40,22 @@ html {
 
 .tohome {
 	margin-top: -10px;
+   /* background-color: yellow;*/ /*orig*/
     background-color: yellow;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: transparent;
+    font-family: 'Jacques Francois Shadow', cursive;
 }
 
 #head2 {
-	color: black;
+	color: yellow;
 	/*font-family: 'Montserrat', sans-serif;*/
-	font-family: 'Cookie', cursive;
-	font-size: 80px;
+	/*font-family: 'Cookie', cursive;*/
+	font-family: 'Jacques Francois Shadow', cursive;
+	font-size: 60px;
 	margin-top: -10px;
 } 
 
@@ -61,7 +64,8 @@ html {
 	padding-top: 20%;
 	background-color: #333; /*off white*/
 	border-radius: 0; /*remove jumbo's rounded corner*/
-	background-image: url(../images/capsonebg2.jpg);
+	/*background-image: url(../images/capsonebg2.jpg);*/
+	background-image: url(../images/darthbg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -76,7 +80,7 @@ html {
 
 #cine {
 	color: yellow;
-	margin-top: -200px;
+	margin-top: -100px;
 	letter-spacing: 4px;
 }
 
@@ -211,6 +215,14 @@ html {
 
 /*start of contact page*/
 
+#missionimg {
+	height: 100vh;
+	background-image: url(../images/darthbg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 /*.footer {
 	position: absolute;
 	bottom: 0;
@@ -218,27 +230,67 @@ html {
 }
 */
 
+#visionborder {
+	border: 3px solid black;
+}
 
 iframe {
 	width: 100%;
 	height: 100%;
 }
+
+#cform {
+	background-color: black;
+    color: white;
+    /*font-family: 'Jacques Francois Shadow', cursive;*/
+    border-style: 10px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#getintouch {
+	font-family: 'Jacques Francois Shadow', cursive;
+	color: green;
+}
+
+#visituscontact {
+	font-family: 'Jacques Francois Shadow', cursive;
+	color: green;
+}
+
+
+#cui {
+	width: 950px;
+	height: 455px;
+	margin-top: -10px;
+}
+
+
 /*end of contact page*/
 
 /*start of about us page*/
 
 #jumbotron-about {
-	background-color: black; /*#141414*/
-	height: 90vh;
+	background-color: white; /*#141414*/
+	height: 100vh;
 	border-radius: 0;
+	padding: 0;
+	color: green;
+}
+
+#moreaboutus > a {
+	text-decoration: none;
+	color: green;
+	font-family: 'Jacques Francois Shadow', cursive;
 }
 
 #landing-about {
-	color: #f2f2f2;
+	color: green; /*#f2f2f2;*/
 	font-size: 5em;
 	padding-top: 20vh;
 	letter-spacing: 5px;
 	font-family: 'Jacques Francois Shadow', cursive;
+	letter-spacing: 8px;
 }
 
 .about-tags {
@@ -247,16 +299,27 @@ iframe {
 }
 
 #mission {
-	height: 100%;
-	background-color: #141414; /*off black*/
-	color: #f2f2f2; /*off white**/
+	height: 100vh;
+	/*background-color: #141414;*/ /*off black*/
+	background-color: white;
+	color: black; /*#f2f2f2;*/ /*off white**/
+	margin-top: 110px;
+	margin: 0 auto;
+}
+
+#ourmission {
+	font-family: 'Jacques Francois Shadow', cursive;
+	margin-top: 110px;
 }
 
 #vision {
 	height: 100%;
-	background-color: #f2f2f2; /*off white**/ 
-	color: #141414; /*off black*/
+	/*background-color: #f2f2f2;*/ /*off white**/ 
+	background-color: black;
+	/*color: #141414;*/ /*off black*/
+	color: white;
 }
+
 
 /*end of about us page*/
 
@@ -288,26 +351,41 @@ iframe {
 }
 */
 
-#dbo {
-	height: 100vh;
-	color: black;
-	/*background-color: yellow;*/
-	background-color: black;
-}
-
-#wwbox {
-	height: 100vh;
-	color: black;
-	/*background-color: yellow;*/
-	background-color: white;
-}
-
 #movrev {
 	height: 100vh;
 	color: black;
 	/*background-color: yellow;*/
 	background-color: darkblue;
 }
+
+#spo {
+	height: 100vh;
+	color: darkblue;
+	/*background-color: yellow;*/
+	background-color: black;
+}
+
+#dbo {
+	height: 100vh;
+	color: black;
+	/*background-color: yellow;*/
+	background-color: black;
+}
+/*
+#wbo {
+	height: 100vh;
+	color: black;
+	background-color: yellow;
+	background-color: black;
+}*/
+
+#wwbox {
+	height: 100vh;
+	color: black;
+	/*background-color: yellow;*/
+	background-color: blue;
+}
+
 
 #barside > li > a {
 	border: 3px solid blue;
@@ -318,6 +396,7 @@ iframe {
 	text-align: center;
 	height: 50px;
 	padding-top: 5%;
+
 }
 
 #navbar {
@@ -365,7 +444,8 @@ ul > li:hover {
 
 ul > li:hover > a {
 	color: blue;
-	background-color: indianred;
+	/*background-color: indianred;*/
+	background-color: green;
 }
 
 ul > li > a:hover {
@@ -375,16 +455,19 @@ ul > li > a:hover {
 #domhead {
 	padding-top: 60px;
 	color: white;
+	font-family: 'Jacques Francois Shadow', cursive;
 }
 
 #worldhead {
 	padding-top: 60px;
 	color: black;
+	font-family: 'Jacques Francois Shadow', cursive;
 }
 
 #revhead {
  	padding-top: 60px;
 	color: white;
+	font-family: 'Jacques Francois Shadow', cursive;
 }
 
 #revimg {
@@ -412,6 +495,36 @@ ul > li > a:hover {
 	border-radius: 10px;
 }
 
+#revbox > a:hover {
+	background-color: green;
+}
+
+#reviewbutton:hover {
+	background-color: green;
+	color: black;
+}
+
+#dombutton:hover {
+	background-color: green;
+	color: black;
+}
+
+#worldbutton:hover {
+	background-color: green;
+	color: black;
+}
+
+#spolist > a {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#spolist > a:hover {
+	background-color: blue;
+	color: white;
+}
+
 #boxlist > a:hover {
 	background-color: blue;
 	color: white;
@@ -425,6 +538,64 @@ ul > li > a:hover {
 #revbox > a:hover {
 	background-color: black;
 	color: white;
+}
+
+
+#movrevaccord > btn {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#movrevaccord {
+	background-color: black;
+	color: white;
+}
+
+#movworldaccord {
+	background-color: black;
+	color: white;
+}
+
+#reviewbutton {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	display: block;
+	background-image: none;
+}
+
+#dombutton {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	display: block;
+	background-image: none;
+}
+
+#worldbutton {
+	margin-bottom: 4px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	display: block;
+	background-image: none;
+}
+
+.card-body {
+	background-color: green;
+}
+
+#averating {
+	margin-bottom: -10px;
 }
 
 /*end of test*/
@@ -449,6 +620,73 @@ img[alt="eto"] {
 }
 
 /*end of gallery*/
+
+
+/*start of mygallery*/
+
+/*#conpage1 {
+	background-color: blue;
+}*/
+
+#visitus {
+	font-family: 'Jacques Francois Shadow', cursive;
+	color: green;
+}
+
+#shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#imgpreview {
+	width: 100%;
+	height: 100%;
+}
+
+#gallerypage2 {
+	display: block;
+	text-decoration: none;
+	color: green;
+	font-weight: bold;
+	font-family: 'Jacques Francois Shadow', cursive;
+	margin-bottom: 100px;
+	margin-top: 90px;
+}
+
+#gallery2head {
+	margin-top: 50px;
+	font-family: 'Jacques Francois Shadow', cursive;
+	color: green;
+}
+
+#navbar {
+	font-family: 'Jacques Francois Shadow', cursive;
+	color: black;
+}
+
+footer {
+	color: white;
+}
+/*#gallpage2 {
+	position: fixed;
+}*/
+/*end of mygallery*/
+
+
 @media only screen and (max-width: 400px) {
 	#jumbo-land {
 	height: 100%; /*vh is the whole screen view*/ /*for mobile and table it should be 100% instead of 100vh*/

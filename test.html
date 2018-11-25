@@ -29,9 +29,10 @@
 </head>
 <body>
 
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top"> <!-- nav will show --> <!-- sticky top to fix the navbar -->
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-success sticky-top"> <!-- nav will show --> <!-- sticky top to fix the navbar -->
 			<a class="navbar-brand "href="boxoffice.html">
-				<i class="far fa-hand-peace"></i> B19 Design
+				<!-- <i class="far fa-hand-peace"></i> B19 Design -->
+				<i class="fas fa-film"></i> cinemaddict
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
@@ -40,7 +41,7 @@
 
 			<div id="navbar-nav" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto"> <!-- ml-auto will place the items to the right -->
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="home.html">Home</a>
 					</li>
 
@@ -48,12 +49,12 @@
 						<a class="nav-link" href="about.html">About Us</a>
 					</li>
 
-					<li class="nav-item active">
+					<!-- <li class="nav-item active">
 						<a class="nav-link" href="boxoffice.html">Box Office Kings</a>
-					</li>
+					</li> -->
 
 					<li class="nav-item">
-						<a class="nav-link" href="gallery.html">Gallery</a>
+						<a class="nav-link" href="mygallery.html">Gallery</a>
 					</li>
 
 					<li class="nav-item">
@@ -66,14 +67,14 @@
 
 	<section id="gitna" class="container-fluid">
 		<div class="sidemenu">
-			 <ul id="barside" class="col-lg-2 navbar-nav">
+			 <ul id="barside" class="col-lg-2 navbar-nav text-center">
                 <li id="rev">
                     <a href="#movrev"><strong>Movie Review</strong></a>
                 </li>
 
-                <li id="spot">
+               <!--  <li id="spot">
                     <a href="#"><strong>Movie Spotlight</strong></a>
-                </li>
+                </li> -->
 
                 <li id="dom">
                     <a href="#dbo"><strong>Domestic Box Office</strong></a>
@@ -83,44 +84,344 @@
                     <a href="#wwbox"><strong>Worldwide Box Office</strong></a>
                 </li>
 
-                <li id="soon">
+               <!--  <li id="soon">
                     <a href="#"><strong>Coming Soon!</strong></a>
-                </li>
+                </li> -->
             </ul>
 		</div>
 	</section>
 
-	<section id="movrev" class="container-fluid">
+	<!-- <section id="movrev" class="container-fluid">
 		<div class="row">
 			<div class="col-md-3">
 				<div id="revbox" class="list-group">
-					<h2 id="revhead">Movie Review</h2>
-					<a href="#" class="list-group-item list-group-item-action">1. Star Wars: The Force Awakens</a> <!-- list-group-item-action puts highlight on the item -->
-					<a href="#" class="list-group-item list-group-item-action">2. Avatar</a>
-					<a href="#" class="list-group-item list-group-item-action">3. Black Panther</a>
-					<a href="#" class="list-group-item list-group-item-action">4. Avengers: Infinity War</a>
-					<a href="#" class="list-group-item list-group-item-action">5. Titanic</a>
-					<a href="#" class="list-group-item list-group-item-action">6. Jurassic World</a>
-					<a href="#" class="list-group-item list-group-item-action">7. Marvel's The Avengers</a>
-					<a href="#" class="list-group-item list-group-item-action">8. Star Wars: The Last Jedi</a>
-					<a href="#" class="list-group-item list-group-item-action">9. Incredibles 2</a>
-					<a href="#" class="list-group-item list-group-item-action">10. The Dark Knight</a>
-				</div> <!-- end of list group -->
-			</div> <!-- end left side -->
+						<h2 id="revhead">Movie Review</h2>
+						<a href="#forcerev" class="list-group-item list-group-item-action">1. Star Wars: The Force Awakens</a> list-group-item-action puts highlight on the item
+						<a href="#" class="list-group-item list-group-item-action">2. Avatar</a>
+						<a href="#" class="list-group-item list-group-item-action">3. Black Panther</a>
+						<a href="#" class="list-group-item list-group-item-action">4. Avengers: Infinity War</a>
+						<a href="#" class="list-group-item list-group-item-action">5. Titanic</a>
+						<a href="#" class="list-group-item list-group-item-action">6. Jurassic World</a>
+						<a href="#" class="list-group-item list-group-item-action">7. Marvel's The Avengers</a>
+						<a href="#" class="list-group-item list-group-item-action">8. Star Wars: The Last Jedi</a>
+						<a href="#" class="list-group-item list-group-item-action">9. Incredibles 2</a>
+						<a href="#" class="list-group-item list-group-item-action">10. The Dark Knight</a>
+				</div> end of list group
+			</div> end left side
+		</div> end of row
+	</section> -->
 
-			<!-- <div class="col-md-9">
-				<img id="revimg" src="assets/images/moviereview.jpg" class="img-fluid">			
-			</div> -->
-		</div>
+	<section id="movrev" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div id="revbox" class="list-group">
+					<div id="movrevaccord" class="accordion">
+						<h2 id="revhead" class="text-center">Movie Review</h2>
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#force">Star Wars: The Force Awakens</a>
+								</h5>
+							</div>
+						
+							<div id="force" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 93%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 8.2/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 399
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 370
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 29
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Packed with action and populated by both familiar faces and fresh blood, The Force Awakens successfully recalls the series' former glory while injecting it with renewed energy.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#avatar">Avatar (2009)</a>
+								</h5>
+							</div>
+						
+							<div id="avatar" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 83%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 7.5/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 303
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 250
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 53
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: It might be more impressive on a technical level than as a piece of storytelling, but Avatar reaffirms James Cameron's singular gift for imaginative, absorbing filmmaking.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#bpanther">Black Panther</a>
+								</h5>
+							</div>
+						
+							<div id="bpanther" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 97%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 8.2/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 435
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 421
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 14
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Black Panther elevates superhero cinema to thrilling new heights while telling one of the MCU's most absorbing stories -- and introducing some of its most fully realized characters.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#infinitywar1">Avengers: Infinity War</a>
+								</h5>
+							</div>
+						
+							<div id="infinitywar1" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 84%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 7.5/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 397
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 333
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 64
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Avengers: Infinity War ably juggles a dizzying array of MCU heroes in the fight against their gravest threat yet, and the result is a thrilling, emotionally resonant blockbuster that (mostly) realizes its gargantuan ambitions.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#titanic2009">Titanic</a>
+								</h5>
+							</div>
+						
+							<div id="titanic2009" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 89%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 8/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 183
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 162
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 21
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: A mostly unqualified triumph for James Cameron, who offers a dizzying blend of spectacular visuals and old-fashioned melodrama.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#jworld">Jurassic World (2015)</a>
+								</h5>
+							</div>
+						
+							<div id="jworld" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 71%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 6.7/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 322
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 229
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 93
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Jurassic World can't match the original for sheer inventiveness and impact, but it works in its own right as an entertaining -- and visually dazzling -- popcorn thriller.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#davengers">Marvel's The Avengers (2012)</a>
+								</h5>
+							</div>
+						
+							<div id="davengers" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 92%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 8/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 338
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 311
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 27
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Thanks to a script that emphasizes its heroes' humanity and a wealth of superpowered set pieces, The Avengers lives up to its hype and raises the bar for Marvel at the movies.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#dlastjedi">Star Wars: The Last Jedi (2017)</a>
+								</h5>
+							</div>
+						
+							<div id="dlastjedi" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 91%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 8.1/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 414
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 376
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 38
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Star Wars: The Last Jedi honors the saga's rich legacy while adding some surprising twists -- and delivering all the emotion-rich action fans could hope for.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#incredibles2">Incredibles 2 (2018)</a>
+								</h5>
+							</div>
+						
+							<div id="incredibles2" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 94%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 7.9/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 322
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 302
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 20
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Incredibles 2 reunites Pixar's family crimefighting team for a long-awaited follow-up that may not quite live up to the original, but comes close enough to earn its name.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="reviewbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#darkknightrev">The Dark Knight (2008)</a>
+								</h5>
+							</div>
+						
+							<div id="darkknightrev" class="collapse animated tada" data-parent="#movrevaccord">
+								<div class="card-body">
+								Tomatometer: 94%
+								</div>
+								<div id="averating" class="card-body">
+								Average Rating: 8.6/10
+							    </div>
+							    <div id="revcount" class="card-body">
+								Reviews Counted: 334
+							    </div>
+							    <div id="freshrev" class="card-body">
+								Fresh: 314
+							    </div>
+								<div id="rottenrev" class="card-body">
+								Rotten: 20
+							    </div>
+							    <div id="criticsrev" class="card-body">
+								Critics Consensus: Dark, complex and unforgettable, The Dark Knight succeeds not just as an entertaining comic book film, but as a richly thrilling crime saga.
+								</div>					
+							</div>
+						</div> <!-- end of card -->
+
+					</div> <!-- end of accordion -->
+				</div> <!-- end of list group -->
+			</div>
+			</div> <!-- end left side -->
+			<div class="col-md-4"></div>
+		</div> <!-- end of row -->
 	</section>
 
-
-	<section id="dbo" class="container-fluid">
+	<!-- <section id="dbo" class="container-fluid">
 		<div class="row">
 			<div class="col-md-3">
 				<div id="boxlist" class="list-group">
 					<h2 id="domhead">Top 10 Domestic Box Office</h2>
-					<a href="#" class="list-group-item list-group-item-action">1. Star Wars: The Force Awakens</a> <!-- list-group-item-action puts highlight on the item -->
+					<a href="#" class="list-group-item list-group-item-action">1. Star Wars: The Force Awakens</a> list-group-item-action puts highlight on the item
 					<a href="#" class="list-group-item list-group-item-action">2. Avatar</a>
 					<a href="#" class="list-group-item list-group-item-action">3. Black Panther</a>
 					<a href="#" class="list-group-item list-group-item-action">4. Avengers: Infinity War</a>
@@ -130,17 +431,328 @@
 					<a href="#" class="list-group-item list-group-item-action">8. Star Wars: The Last Jedi</a>
 					<a href="#" class="list-group-item list-group-item-action">9. Incredibles 2</a>
 					<a href="#" class="list-group-item list-group-item-action">10. The Dark Knight</a>
+				</div> end of list group
+			</div> end left side
+		</div>
+	</section> -->
+
+
+	<section id="dbo" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div id="revbox" class="list-group">
+					<div id="movdomaccord" class="accordion">
+						<h2 id="domhead" class="text-center">Top 10 Domestic Box Office</h2>
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#forcedom">1. Star Wars: The Force Awakens</a>
+								</h5>
+							</div>
+						
+							<div id="forcedom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$936,662,225</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#avatardom">2. Avatar</a>
+								</h5>
+							</div>
+						
+							<div id="avatardom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$760,507,625</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#awakensdom">3. Black Panther</a>
+								</h5>
+							</div>
+						
+							<div id="awakensdom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$700,059,566</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#infinitydom">4. Avengers Infinity War</a>
+								</h5>
+							</div>
+						
+							<div id="infinitydom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$678,815,482</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#titanicdom">5. Titanic</a>
+								</h5>
+							</div>
+						
+							<div id="titanicdom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$659,363,944</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#jurassicdom">6. Jurassic World</a>
+								</h5>
+							</div>
+						
+							<div id="jurassicdom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$652,270,625</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#avengersdom">7. Marvel's The Avengers</a>
+								</h5>
+							</div>
+						
+							<div id="avengersdom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$623,357,910</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#jedidom">8. Star Wars: The Last Jedi</a>
+								</h5>
+							</div>
+						
+							<div id="jedidom" class="collapse animated flipInX" data-parent="#movdomaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$620,181,382</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#incrediblesdom">9. Incredibles 2</a>
+								</h5>
+							</div>
+						
+							<div id="incrediblesdom" class="collapse animated flipInX" data-parent="#movrevaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$608,472,207</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="dombutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#darkknightdom">10. The Dark Knight</a>
+								</h5>
+							</div>
+						
+							<div id="darkknightdom" class="collapse animated flipInX" data-parent="#movrevaccord">
+								<div class="card-body text-center">
+								Domestic Box office: <strong>$534,858,444</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+					</div> <!-- end of accordion -->
 				</div> <!-- end of list group -->
 			</div> <!-- end left side -->
-		</div>
+			<div class="col-md-4"></div>
+		</div>  <!-- end of row -->
 	</section>
 
+	<br>
+
 	<section id="wwbox" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div id="revbox" class="list-group">
+					<div id="movworldaccord" class="accordion">
+						<h2 id="domhead" class="text-center">Top 10 Worldwide Box Office</h2>
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#avatarworld">1. Avatar</a>
+								</h5>
+							</div>
+						
+							<div id="avatarworld" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$2,787,965,087</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#titanicworld">2. Titanic</a>
+								</h5>
+							</div>
+						
+							<div id="titanicworld" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$2,187,463,944</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#awakensworld">3. Star Wars: The Force Awakens</a>
+								</h5>
+							</div>
+						
+							<div id="awakensworld" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$2,068,223,624</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#infinitydom">4. Avengers Infinity War</a>
+								</h5>
+							</div>
+						
+							<div id="infinitydom" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$2,046,900,111</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#worldjurassic">5. Jurassic World</a>
+								</h5>
+							</div>
+						
+							<div id="worldjurassic" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$1,671,713,208</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#worldavengers">6. Marvel's The Avengers</a>
+								</h5>
+							</div>
+						
+							<div id="worldavengers" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$1,518,812,988</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#furiousworld">7. Furious 7</a>
+								</h5>
+							</div>
+						
+							<div id="furiousworld" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$1,516,045,911</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#ultronworld">8. Avengers: Age of Ultron</a>
+								</h5>
+							</div>
+						
+							<div id="ultronworld" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$1,405,403,694</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#pantherworld">9. Black Panther</a>
+								</h5>
+							</div>
+						
+							<div id="pantherworld" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$1,346,913,161</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+
+						<div class="card"> <!-- start of card -->
+				 			<div class="card-header">
+								<h5 class="mb-0">
+									<a id="worldbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#potterworld">Harry Potter and the Deathly Hollows Part 2</a>
+								</h5>
+							</div>
+						
+							<div id="potterworld" class="collapse animated bounce" data-parent="#movworldaccord">
+								<div class="card-body text-center">
+								Worldwide Box office: <strong>$1,341,511,219</strong>
+								</div>				
+							</div>
+						</div> <!-- end of card -->
+					</div> <!-- end of accordion -->
+				</div> <!-- end of list group -->
+			</div> <!-- end left side -->
+			<div class="col-md-4"></div>
+		</div>  <!-- end of row -->
+	</section>
+
+	<!-- <section id="wwbox" class="container-fluid">
 		<div class="row">
 			<div class="col-md-3">
 				<div id="wwboxlist" class="list-group">
 					<h2 id="worldhead">Top 10 Worldwide Box Office</h2>
-					<a href="#" class="list-group-item list-group-item-action">1. Star Wars: The Force Awakens</a> <!-- list-group-item-action puts highlight on the item -->
+					<a href="#" class="list-group-item list-group-item-action">1. Star Wars: The Force Awakens</a> list-group-item-action puts highlight on the item
 					<a href="#" class="list-group-item list-group-item-action">2. Avatar</a>
 					<a href="#" class="list-group-item list-group-item-action">3. Black Panther</a>
 					<a href="#" class="list-group-item list-group-item-action">4. Avengers: Infinity War</a>
@@ -150,10 +762,10 @@
 					<a href="#" class="list-group-item list-group-item-action">8. Star Wars: The Last Jedi</a>
 					<a href="#" class="list-group-item list-group-item-action">9. Incredibles 2</a>
 					<a href="#" class="list-group-item list-group-item-action">10. The Dark Knight</a>
-				</div> <!-- end of list group -->
-			</div> <!-- end left side -->
+				</div> end of list group
+			</div> end left side
 		</div>
-	</section>
+	</section> -->
 
 	<!-- <div id="dbo" class="container-fluid">
 		<h2>Domestic Box Office</h2>
@@ -165,7 +777,7 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div> -->
 
-	<footer class="footer bg-secondary fixed-bottom"> <!-- fixed bottom to set the footer fixed at the bottom -->
+	<footer class="footer bg-success fixed-bottom"> <!-- fixed bottom to set the footer fixed at the bottom -->
 		<p class="text-center mb-0 p-2"> Raymond Luna | Tuitt Coding Bootcamp</p> <!-- mb-0 margin bottom 0, p-3 is padding 3 -->
 	</footer>
 

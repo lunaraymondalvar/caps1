@@ -29,11 +29,12 @@
 </head>
 <body>
 
-	<div class="container-fluid">
+	<div class="container-fluid mx-0">
 
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"> <!-- nav will show --> <!-- sticky top to fix the navbar -->
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-success sticky-top"> <!-- nav will show --> <!-- sticky top to fix the navbar -->
 			<a class="navbar-brand "href="home.html">
-				<i class="far fa-hand-peace"></i> B19 Design
+				<!-- <i class="far fa-hand-peace"></i> B19 Design -->
+				<i class="fas fa-film"></i> cinemaddict
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
@@ -50,12 +51,12 @@
 						<a class="nav-link" href="about.html">About</a>
 					</li>
 
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="boxofficekings.html">Box Office Kings</a>
-					</li>
+					</li> -->
 
 					<li class="nav-item">
-						<a class="nav-link" href="gallery.html">Gallery</a>
+						<a class="nav-link" href="mygallery.html">Gallery</a>
 					</li>
 
 					<li class="nav-item active">
@@ -69,11 +70,14 @@
 
 		<div class="row">
 			<header class="col-12 col-md-12 col-lg-12">
-				<h1 class="text-center py-3">Contact Us Page</h1> <!-- py-3 is padding y axis (vertically) -->			
+				<h1 id="getintouch" class="text-center py-3">Get in touch with us!</h1> <!-- py-3 is padding y axis (vertically) -->	
 			</header>
 
 			<div class="col-12 col-md-6 col-lg-6">
-				<form>
+				<img id="cui" class="animated flipInX" src="assets/images/contactusimage.png">
+			</div>
+			<div class="col-12 col-md-6 col-lg-6">
+				<form id="cform" class="animated flipInX">
 					<div class="form-group">
 						<label for="username"> Username </label>
 						<input id="username" class="form-control" type="text" placeholder="Enter Your Username Here">
@@ -98,14 +102,23 @@
 
 				</form> 
 			</div> <!-- end of left side-->
- 
+
+		</div> 
+
+		<div class="row">
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="visituscontact" class="text-center py-3">Visit Us!</h1> <!-- py-3 is padding y axis (vertically) -->	
+			</header>
+ 			
+ 			<div class="col-12 col-md-3 col-lg-3 mb-0"></div>
 			<div class="col-12 col-md-6 col-lg-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.732372532676!2d121.03122371418657!3d14.557291089830096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c901e242f095%3A0xcbab77db1aac9063!2sENZO+BUILDING!5e0!3m2!1sfil!2sph!4v1542700142835" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe class="animated flipInX" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.732372532676!2d121.03122371418657!3d14.557291089830096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c901e242f095%3A0xcbab77db1aac9063!2sENZO+BUILDING!5e0!3m2!1sfil!2sph!4v1542700142835" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div> <!-- end of right side -->
+			<div class="col-12 col-md-3 col-lg-3"></div>
 
 		</div> <!-- end of row -->
 
-		<footer class="footer bg-primary fixed-bottom"> <!-- fixed bottom to set the footer fixed at the bottom -->
+		<footer class="footer bg-success fixed-bottom"> <!-- fixed bottom to set the footer fixed at the bottom -->
 			<p class="text-center mb-0 p-3"> Raymond Luna | Tuitt Coding Bootcamp</p> <!-- mb-0 margin bottom 0, p-3 is padding 3 -->
 		</footer>
 		

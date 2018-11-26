@@ -705,14 +705,14 @@ footer {
 	#jumbo-land {
 	height: 100%; /*vh is the whole screen view*/ /*for mobile and table it should be 100% instead of 100vh*/
 	}
-	#rev, #dbo, #world {
+	/*#rev, #dbo, #world {
 		padding: 0;
 		margin: 0 auto;
-	}
+	}*/
 
-	#star {
+	/*#star {
 		width: 500px;
-	}
+	}*/
 
 
 }

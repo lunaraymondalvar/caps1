@@ -689,12 +689,31 @@ footer {
 @media only screen and (max-width: 400px) {
 	#jumbo-land {
 	height: 100%; /*vh is the whole screen view*/ /*for mobile and table it should be 100% instead of 100vh*/
+	}
+	#landing-about {
+		font-size: 2em;
 
+	}
+
+	#moreaboutus {
+		font-size: 1.5em;
+	}
 }
+
 
 @media only screen and (min-height: 401px) and (max-height: 960px)  {
 	#jumbo-land {
 	height: 100%; /*vh is the whole screen view*/ /*for mobile and table it should be 100% instead of 100vh*/
-	
+	}
+	#rev, #dbo, #world {
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	#star {
+		width: 500px;
+	}
+
+
 }
 

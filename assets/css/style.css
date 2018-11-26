@@ -98,6 +98,11 @@ html {
 	padding: 30%;
 }
 
+#gotohome > a {
+ 	text-decoration: none;
+ 	color: yellow;
+}
+
 
 #carousel-home {
 	height: 100vh;
@@ -260,7 +265,7 @@ iframe {
 
 
 #cui {
-	width: 950px;
+	width: 650px;
 	height: 455px;
 	margin-top: -10px;
 }
@@ -299,7 +304,7 @@ iframe {
 }
 
 #mission {
-	height: 100vh;
+	height: 100%;
 	/*background-color: #141414;*/ /*off black*/
 	background-color: white;
 	color: black; /*#f2f2f2;*/ /*off white**/
@@ -309,7 +314,7 @@ iframe {
 
 #ourmission {
 	font-family: 'Jacques Francois Shadow', cursive;
-	margin-top: 110px;
+	margin-top: 60px;
 }
 
 #vision {
@@ -352,21 +357,15 @@ iframe {
 */
 
 #movrev {
-	height: 100vh;
+	height: 100%;
 	color: black;
 	/*background-color: yellow;*/
 	background-color: darkblue;
 }
 
-#spo {
-	height: 100vh;
-	color: darkblue;
-	/*background-color: yellow;*/
-	background-color: black;
-}
 
 #dbo {
-	height: 100vh;
+	height: 100%;
 	color: black;
 	/*background-color: yellow;*/
 	background-color: black;
@@ -380,7 +379,7 @@ iframe {
 }*/
 
 #wwbox {
-	height: 100vh;
+	height: 100%;
 	color: black;
 	/*background-color: yellow;*/
 	background-color: blue;
